@@ -6,10 +6,22 @@ public class Mover : MonoBehaviour
 
     void Start()
     {
-
+        PrintInstruction();
     }
 
     void Update()
+    {
+        MovePlayer();
+    }
+
+    void PrintInstruction()
+    {
+        Debug.Log("Welcome To Game");
+        Debug.Log("Moving using arrow keys");
+        Debug.Log("Dont bump into objects");
+    }
+
+    void MovePlayer()
     {
         // Left and right movement input x axis
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
