@@ -14,7 +14,7 @@ public class Mover : MonoBehaviour
         // Left and right movement input x axis
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * movementSpeed;
         // Y axis upo and down input y axis 
-        float yValue = 0.001f;
+        float yValue = 0.000f;
         // Forward and backward input z axis
         float zValue = Input.GetAxis("Vertical") * Time.deltaTime * movementSpeed;
         transform.Translate(xValue, yValue, zValue);
